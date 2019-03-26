@@ -40,3 +40,28 @@ for (const value of Object.values(doctorBill)){
     console.log(value);
 };
 
+// =========================== lightning ex 4 ==================
+/*
+Lightning Exercise 1: Output all of the key names from your doctor's office bill to the console in Chrome.
+ */
+for (const value of Object.keys(doctorBill)){
+    console.log(value);
+};
+// console.log(Object.keys(doctorBill));
+
+
+// =========================== lightning ex 5 ==================
+/*
+Lightning Exercise 2: Output all of the key names from your doctor's office bill to the DOM inside a parent <section> element. Wrap each one in a <span> element.
+*/
+
+const docContainer = document.querySelector("#doctors-container");
+const parentSection = document.createElement("section");
+
+parentSection.innerHTML += "<h2>Key Names</h2>";
+for(const key of Object.keys(doctorBill)){
+    const doctorKeySpan = document.createElement("div");
+    doctorKeySpan.textContent = key;
+    parentSection.appendChild(doctorKeySpan);
+}
+docContainer.appendChild(parentSection);
