@@ -91,3 +91,29 @@ allCars.forEach(car => {
       outputElement.innerHTML += `<div>${value}</div>`
     }
 })
+
+// ==================== Object.entries() ======================
+/*
+ Remember to use backticks when you are building string templates to interpolate variables in JavaScript. It's a common oversight for new developers.
+
+const bug = {
+    flying: true,
+    legs: 6
+}
+
+for (const entry of Object.entries(bug)) {
+    console.log(entry)
+}
+
+> [ 'flying', true ]  RETURNS AN ARRAY!!!!!!!!
+> [ 'legs', 6 ]​​​​​
+*/
+outputElement.innerHTML += "<h1>Car List</h1>"
+
+allCars.forEach(car => {
+    outputElement.innerHTML += "<hr/>"
+
+    for (const entry of Object.entries(car)) {
+        outputElement.innerHTML += `<div>${entry[0]}: ${entry[1]}</div>`
+    }
+})
