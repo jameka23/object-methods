@@ -4,6 +4,7 @@ Lightning Exercise 1: Create an object to represent your favorite dinner item (e
 */
 const friedChicken = {
     ethnicity: "Southern American",
+    weight: "4 pc",
     vegetarian: false,
     sides: "collard greens"
 };

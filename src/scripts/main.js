@@ -9,14 +9,14 @@ const mustang = {
 }
 
 // Dot notation
-console.log(mustang.color); // Midnight Blue
+// console.log(mustang.color); // Midnight Blue
 
-// Square bracket notation
-console.log(mustang["color"]); //Midnight Blue
+// // Square bracket notation
+// console.log(mustang["color"]); //Midnight Blue
 
-// Dynamic square bracket notation
-const colorProperty = "color";
-console.log(mustang[colorProperty]); //Midnight Blue
+// // Dynamic square bracket notation
+// const colorProperty = "color";
+// console.log(mustang[colorProperty]); //Midnight Blue
 
 
 const allCars = [
@@ -105,6 +105,7 @@ for (const entry of Object.entries(bug)) {
     console.log(entry)
 }
 
+array of arrays
 > [ 'flying', true ]  RETURNS AN ARRAY!!!!!!!!
 > [ 'legs', 6 ]​​​​​
 */
@@ -112,8 +113,10 @@ outputElement.innerHTML += "<h1>Car List</h1>"
 
 allCars.forEach(car => {
     outputElement.innerHTML += "<hr/>"
-
-    for (const entry of Object.entries(car)) {
-        outputElement.innerHTML += `<div>${entry[0]}: ${entry[1]}</div>`
+    const arrayOfObjectEntries = Object.entries(car)
+    for (const keyValueArray of arrayOfObjectEntries) {
+        outputElement.innerHTML += `<div>${keyValueArray[0]}: ${keyValueArray[1]}</div>`
     }
-})
+});
+
+
