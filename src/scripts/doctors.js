@@ -27,26 +27,26 @@ Use square bracket notation to output the value of those three properties to the
 // const owed = "amountBilled";
 // const patient = "patientName";
 
-console.log(doctorBill[dateVisited]);
-console.log(doctorBill[owed]);
-console.log(doctorBill[patient]);
+// console.log(doctorBill[dateVisited]);
+// console.log(doctorBill[owed]);
+// console.log(doctorBill[patient]);
 
 // =========================== lightning ex 3 ==================
 /*
 Lightning Exercise 3: Use Object.values() to output all the property values to the console in Chrome.
 */
 
-for (const value of Object.values(doctorBill)){
-    console.log(value);
-};
+// for (const value of Object.values(doctorBill)){
+//     console.log(value);
+// };
 
 // =========================== lightning ex 4 ==================
 /*
 Lightning Exercise 1: Output all of the key names from your doctor's office bill to the console in Chrome.
  */
-for (const value of Object.keys(doctorBill)){
-    console.log(value);
-};
+// for (const value of Object.keys(doctorBill)){
+//     console.log(value);
+// };
 // console.log(Object.keys(doctorBill));
 
 
@@ -65,3 +65,5 @@ for(const key of Object.keys(doctorBill)){
     parentSection.appendChild(doctorKeySpan);
 }
 docContainer.appendChild(parentSection);
+
+
